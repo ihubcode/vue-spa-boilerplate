@@ -1,0 +1,38 @@
+.tab ,.campaign-header{
+	width: 100%;
+    background-color: #fff;
+	.tab-nav {
+		border-bottom: 1px solid $color-border;
+		padding-left: 5.33rem;
+	    width: 100%
+        float: left;
+        overflow: hidden;
+		clearfix();
+
+		.tab-nav-item {
+			margin-right: 5%;
+			line-height: 300%;
+			float: left;
+			color: $color-black-light;
+			cursor: pointer;
+			text-align: center;
+			&.active {
+				border-bottom: 2px solid $color-blue;
+				color: $color-black;
+			}
+		}
+	}
+
+	.tab-content {
+		.tab-content-item {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+	}
+}
+
+
+
+

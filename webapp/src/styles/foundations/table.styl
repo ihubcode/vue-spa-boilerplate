@@ -1,0 +1,116 @@
+$color-table-border = #dadada;
+$background-color-table-header = #f3f3f3;
+
+table {
+	width: 100%;
+	text-align: left;
+	thead {
+		tr {
+			background-color: $color-bg;
+			th {
+				font-weight $font-weight-normal;
+				line-height: 300%;
+				border:0;
+				padding:0;
+				font-size: 1.4rem;
+				&:first-child {
+					text-align: center;
+				}
+				&:nth-child(2) {
+					padding-left: 2.5%;
+				}
+			}
+		}
+
+	}
+	tbody {
+		tr {
+			&:nth-child(odd) {
+				background-color: $color-bg-light;
+			}
+			&:nth-child(even) {
+				background-color: $color-bg;
+			}
+			td {
+				color: $color-black-light;
+				line-height: 300%;
+				border:0;
+				padding:0;
+				font-size:1.4rem;
+				white-space: nowrap;
+				&:first-child {
+					text-align: center;
+				}
+				&:nth-child(2) {
+					padding-left: 2.5%;
+				}
+			}
+		}
+	}
+}
+
+
+.fixed-table-container {
+	position: relative; /* could be absolute or relative */
+	padding-top: 30px; /* height of header */
+
+	.fixed-table-container-inner {
+		overflow-x: auto;
+		overflow-y: auto;
+		height: 100%;
+	}
+
+	.header-background {
+		background-color: $background-color-table-header;
+		border-top: 1px solid $color-table-border;
+		height: 30px; /* height of header */
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+	}
+
+	table {
+		width: 100%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		background-color: transparent;
+		border-spacing: 0;
+		border-collapse: collapse;
+
+		td {
+			line-height: 1;
+			padding-left: 5px !important;
+			padding-right: 5px !important;
+		}
+	}
+
+	.th-inner {
+		position: absolute;
+		top: 0;
+		line-height: 30px; /* height of header */
+		text-align: left;
+		//border-left: 1px solid $color-table-border;
+		padding-left: 5px;
+		margin-left: 0;
+	}
+	.first .th-inner {
+		border-left: none;
+		padding-left: 6px;
+	}
+}
+
+.table-bordered {
+	border: 1px solid $color-table-border;
+	th {
+		border: 1px solid $color-table-border;
+		padding: 6px;
+		line-height: 1.42857143;
+		text-align center;
+	}
+	td {
+		border: 1px solid $color-table-border;
+		padding: 6px;
+		vertical-align: top;
+	}
+}

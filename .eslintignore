@@ -1,0 +1,3 @@
+webapp/build/*.js
+webapp/dist/**.js
+webapp/static/**.js
