@@ -10,6 +10,7 @@
 `node index.js`
 
 then visit <http://localhost:3000> you will get it.
+
 ![image](webapp/static/images/QQ20161002-0.jpg)
 
 
@@ -23,4 +24,4 @@ then visit <http://localhost:3000> you will get it.
 2. `vuejs` for  for the pragmatic innovation.
 3. `vuex` for better state management.
 4. `stylus` for precompiling styles.
-5. ES6 for advanced syntax
+5. ES6 for advanced syntax.
