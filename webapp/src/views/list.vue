@@ -28,7 +28,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-	import { root } from '../action-types';
+	import { root,form } from '../action-types';
 	import Infinite from './widgets/infinite.vue';
 	import { setupData } from '../actions/list';
 
