@@ -1,7 +1,7 @@
 <template>
 	<div class="order-view">
 		<div class="header"></div>
-		<infinite v-ref:infinite url="/static/assets/list.json" :on-data-loaded="onDataLoaded">
+		<infinite v-ref:infinite url="/static/assets/list.json" :on-load-success="onLoadSuccess" :on-load-failure="onLoadFailure">
 			<table slot="content" class="orders" cellspacing="0" cellpadding="0">
 				<thead>
 					<tr>
@@ -28,9 +28,8 @@
 </template>
 
 <script type="text/ecmascript-6">
-	import { root,form } from '../action-types';
+	import { root,list } from '../action-types';
 	import Infinite from './widgets/infinite.vue';
-	import { setupData } from '../actions/list';
 
 	export default {
 		components: {
@@ -44,7 +43,8 @@
 			},
 			actions: {
 				reset: ({dispatch}) => dispatch(root.RESET),
-				setupData
+				setupError: ({dispatch}, error) => dispatch(list.LIST_ERROR, error),
+				setupData: ({dispatch}, data) => dispatch(list.LIST_LOADED, data)
 			}
 		},
 
@@ -65,8 +65,11 @@
 		},
 
 		methods: {
-			onDataLoaded(data) {
+			onLoadSuccess(data) {
 				this.setupData(data);
+			},
+			onLoadFailure(data) {
+				this.setupError(data);
 			}
 		}
 

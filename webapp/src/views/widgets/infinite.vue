@@ -66,7 +66,8 @@
 			loadingText: {type: String, default: '加载中...'},
 			loadMoreText: {type: String, default: '加载更多'},
 			loadMoreClickText: {type: String, default: '点击加载更多'},
-			onDataLoaded: Function // data nofity
+			onLoadSuccess: Function, // data nofity
+			onLoadFailure: Function
 		},
 
 		components: {
@@ -132,26 +133,20 @@
 				this.isBusy = true;
 				http.get(this.url, {page: page, limit: this.limit})
 					.then((resp) => {
-						const result = resp.result;
-						if (result.length < this.limit) {
+						const data = resp.data;
+						if (data.length < this.limit) {
 							this.isCompleted = true;
 						}
 						this.page++;
 						this.isBusy = false;
 
-						if (this.onDataLoaded) {
-							this.onDataLoaded({
-								success: true,
-								result: {items: result, page: this.page}
-							});
+						if (this.onLoadSuccess) {
+							this.onLoadSuccess({ items: data, page: this.page });
 						}
 					})
 					.catch((err) => {
 						this.isBusy = false;
-						this.onDataLoaded({
-							success: false,
-							result: {message: err.message, __timestamp__: Date.now()}
-						});
+						this.onLoadFailure({ message: err.message, __timestamp__: Date.now() });
 					});
 			},
 

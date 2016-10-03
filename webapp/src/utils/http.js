@@ -1,15 +1,6 @@
 import 'whatwg-fetch';
-//import utils from './utils';
-//import consts from './consts';
-/**
- * URL全路径
- */
+
 function __createURL(url) {
-
-//	if(url.startsWith('http://') || url.startsWith('https://')) {
-//		return url;
-//	}
-
 	let hasQ = url.indexOf('?') !== -1;
 	url += (hasQ ? '&' : '?') + 'authid=x&authtoken=y';
 	return url;
@@ -24,7 +15,7 @@ function __fetch(url, options) {
 			return response.json();
 		}).then((json) => {
 			if(json.success) {
-				return { result: json.result, __timestamp__: Date.now() };
+				return { data: json.result, __timestamp__: Date.now() };
 			} else {
 				return Promise.reject(new Error(JSON.stringify(json.result)));
 			}

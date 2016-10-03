@@ -21,8 +21,8 @@ const mutations = {
 	/**
 	 * list data loaded
 	 */
-	[list.LIST_LOADED] (state, result) {
-		const { items, page=1 } = result;
+	[list.LIST_LOADED] (state, data) {
+		const { items, page=1 } = data;
 		if(page === 1) {
 			state.items = [];
 		}
