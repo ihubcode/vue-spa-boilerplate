@@ -13,7 +13,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-	import Modal from '../widgets/modal.vue';
+	import Modal from '../widgets/Modal.vue';
 
 	export default {
 		components: {

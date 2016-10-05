@@ -17,7 +17,7 @@
 	 * Vue 组件
 	 *****************************************/
 	import http from '../../utils/http';
-	import Spinner from '../widgets/spinner.vue';
+	import Spinner from './Spinner.vue';
 
 	const data = {
 		isBusy: false,

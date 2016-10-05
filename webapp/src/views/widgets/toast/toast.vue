@@ -11,7 +11,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-	import ToastItem from './toast-item.vue';
+	import ToastItem from './ToastItem.vue';
 
 	const defaultOptions = {
 		maxToasts: 6,

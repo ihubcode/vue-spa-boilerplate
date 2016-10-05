@@ -1,5 +1,5 @@
-import { root, list } from '../action-types';
-import { getOrderStatusLabel } from '../utils/commons';
+import { root, list } from '../commons/action-types';
+import { getOrderStatusLabel } from '../commons/index';
 
 // initial state
 const state = {

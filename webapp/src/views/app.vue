@@ -14,9 +14,9 @@
 </template>
 
 <script type="text/ecmascript-6">
-	import Alert from './widgets/alert.vue';
-	import Confirm from './widgets/confirm.vue';
-	import Toast from './widgets/toast/toast.vue';
+	import Alert from './widgets/Alert.vue';
+	import Confirm from './widgets/Confirm.vue';
+	import Toast from './widgets/toast/Toast.vue';
 
 	export default {
 		components: {

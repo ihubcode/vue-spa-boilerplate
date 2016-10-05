@@ -2,7 +2,7 @@ import 'whatwg-fetch';
 
 function __createURL(url) {
 	let hasQ = url.indexOf('?') !== -1;
-	url += (hasQ ? '&' : '?') + 'authid=x&authtoken=y';
+	url += (hasQ ? '&' : '?') + 'auth=x';
 	return url;
 }
 

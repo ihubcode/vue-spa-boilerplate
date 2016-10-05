@@ -40,9 +40,23 @@ export default function() {
 		return o;
 	};
 
+	/**
+	 * capitalize first letter
+	 */
+	String.prototype.capitalizeFirstLetter = function() {
+		return this.charAt(0).toUpperCase() + this.slice(1);
+	};
+
+	/**
+	 * lowercase first letter
+	 */
+	String.prototype.lowercaseFirstLetter = function() {
+		return this.charAt(0).toLowerCase() + this.slice(1);
+	};
 
 	/**
 	 * date format
+	 *  usage: new Date().format('yyyy/MM/dd hh:mm:ss');
 	 */
 	Date.prototype.format = function(format) {
 		var o = {

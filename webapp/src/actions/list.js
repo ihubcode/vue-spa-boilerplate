@@ -1,1 +1,1 @@
-import { list } from '../action-types';
+import { list } from '../commons/action-types';

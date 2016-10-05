@@ -1,6 +1,6 @@
 import http from '../utils/http';
 // import utils from '../utils/utils';
-import action from '../action-types';
+import action from '../commons/action-types';
 
 const INDEX = action.INDEX;
 

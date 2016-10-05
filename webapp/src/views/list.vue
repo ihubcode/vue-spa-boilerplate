@@ -28,8 +28,8 @@
 </template>
 
 <script type="text/ecmascript-6">
-	import { root,list } from '../action-types';
-	import Infinite from './widgets/infinite.vue';
+	import { root,list } from '../commons/action-types';
+	import Infinite from './widgets/Infinite.vue';
 
 	export default {
 		components: {

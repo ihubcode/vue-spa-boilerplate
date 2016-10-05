@@ -9,7 +9,7 @@ const orderStatus = {
 /**
  * get order status label
  */
-export function getOrderStatusLabel(status) {
+export const getOrderStatusLabel = (status) => {
 	let label = '';
 	switch (status) {
 		case 0: { // not pay
@@ -30,4 +30,4 @@ export function getOrderStatusLabel(status) {
 		}
 	}
 	return label;
-}
+};

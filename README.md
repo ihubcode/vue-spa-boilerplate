@@ -5,9 +5,7 @@
 
 `npm install`
 
-`npm run dev` 
-
-`node index.js`
+`npm run dev`
 
 then visit <http://localhost:3000> you will get it.
 

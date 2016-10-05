@@ -27,9 +27,9 @@
 </template>
 
 <script type="text/ecmascript-6">
-	import { root, form } from '../action-types';
+	import { root, form } from '../commons/action-types';
 	import { save } from '../actions/form';
-	import utils from '../utils/utils';
+	import { is } from '../utils/index';
 
 	module.exports = {
 		components: {
@@ -94,7 +94,7 @@
 			 */
 			checked(query) {
 				query = query || ['.nickname', '.address'];
-				if(utils.is.string(query)) {
+				if(is.string(query)) {
 					query = [query];
 				}
 
@@ -107,14 +107,14 @@
 					$el.find(q).find('input,select').removeClass('error');
 					switch (q) {
 						case '.nickname': {
-							if(utils.is.empty(value)) {
+							if(is.empty(value)) {
 								errors.push({ $el: $el.find(q), message: 'please input nickname' });
 								break;
 							}
 							break;
 						}
 						case '.address': {
-							if(utils.is.empty(value)) {
+							if(is.empty(value)) {
 								errors.push({ $el: $el.find(q), message: 'please input address' });
 								break;
 							}

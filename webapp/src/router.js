@@ -1,12 +1,12 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Index from './views/index.vue';
-import Login from './views/user-login.vue';
-import Register from './views/user-register.vue';
-import List from './views/list.vue';
-import Form from './views/form.vue';
-import Widgets from './views/widgets.vue';
+import Index from './views/Home.vue';
+import Login from './views/Login.vue';
+import Register from './views/Register.vue';
+import List from './views/List.vue';
+import Form from './views/Form.vue';
+import Widgets from './views/Widgets.vue';
 
 // install router
 Vue.use(Router);
