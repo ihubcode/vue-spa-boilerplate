@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Index from './views/Home.vue';
+import Home from './views/Home.vue';
 import Login from './views/Login.vue';
 import Register from './views/Register.vue';
 import List from './views/List.vue';
@@ -19,7 +19,7 @@ const router = new Router({
 
 router.map({
 	'/': {
-		component: Index,
+		component: Home,
 		subRoutes: {
 			'/': { component: List },
 			'/list': { component: List },

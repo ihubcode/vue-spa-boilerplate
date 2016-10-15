@@ -1,11 +1,10 @@
-import { root, list } from '../commons/action-types';
-import { getOrderStatusLabel } from '../commons/index';
+import { root, list } from '../types';
+import { getOrderStatusLabel } from '../../commons/index';
 
 // initial state
 const state = {
 	error: undefined,
-	items: [],
-	codeurl: {}
+	items: []
 };
 const __state = Object.assign({}, state);
 

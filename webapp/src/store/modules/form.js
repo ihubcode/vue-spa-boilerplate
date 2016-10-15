@@ -1,4 +1,4 @@
-import { root, form } from '../commons/action-types';
+import { root, form } from '../types';
 
 // initial state
 const state = {

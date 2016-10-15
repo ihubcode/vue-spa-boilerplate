@@ -20,7 +20,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-	import { root } from '../commons/action-types';
+	import { root } from '../store/types';
 	import { is } from '../utils/index';
 
 	export default {

@@ -1,5 +1,5 @@
-import { form } from '../commons/action-types';
-import http from '../utils/http';
+import { form } from '../types';
+import http from '../../utils/http';
 
 /**
  * save

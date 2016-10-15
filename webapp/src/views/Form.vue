@@ -27,8 +27,8 @@
 </template>
 
 <script type="text/ecmascript-6">
-	import { root, form } from '../commons/action-types';
-	import { save } from '../actions/form';
+	import { root, form } from '../store/types';
+	import { save } from '../store/actions/form';
 	import { is } from '../utils/index';
 
 	module.exports = {

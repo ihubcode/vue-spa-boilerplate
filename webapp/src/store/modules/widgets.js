@@ -1,4 +1,4 @@
-import { root, widgets } from '../commons/action-types';
+import { root, widgets } from '../types';
 
 // initial state
 const state = {

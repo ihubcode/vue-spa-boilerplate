@@ -28,7 +28,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-	import { root,list } from '../commons/action-types';
+	import { root,list } from '../store/types';
 	import Infinite from './widgets/Infinite.vue';
 
 	export default {

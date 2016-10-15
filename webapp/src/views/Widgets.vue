@@ -18,9 +18,9 @@
 </template>
 
 <script type="text/ecmascript-6">
-	import { root, widgets } from '../commons/action-types';
+	import { root, widgets } from '../store/types';
 	import utils from '../utils/index';
-	import { load } from '../actions/widgets';
+	import { load } from '../store/actions/widgets';
 	import Spinner from './widgets/Spinner.vue';
 	import SimpleModal from './modals/SimpleModal.vue';
 
