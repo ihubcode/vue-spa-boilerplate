@@ -5,6 +5,7 @@
 		<div class="button button-blue" @click="onShowAlertError">Alert Error</div>
 		<br/> <br/>
 		<div class="button button-blue" @click="onShowConfirm">Confirm</div>
+		<br/> <br/>
 		<div class="button button-blue" @click="onShowModal">Modal</div>
 		<br/> <br/>
 		<div class="button button-blue" @click="onShowToastSuccess">Toast Success</div>

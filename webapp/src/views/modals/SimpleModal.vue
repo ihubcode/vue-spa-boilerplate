@@ -1,5 +1,5 @@
 <template>
-	<div class="qrcode-modal">
+	<div class="simple-modal">
 		<modal v-ref:modal :title="title" :dismiss-on-mask="false">
 			<div slot="content" class="content">
 				<div class="iconfont icon-close" @click="onDismiss"></div>
@@ -21,8 +21,7 @@
 		},
 
 		props: {
-			title: String,
-			codeurl: String
+			title: String
 		},
 
 		methods: {
