@@ -1,4 +1,4 @@
-> use vuejs & vuex & vue-router to build Single Page Web Application.
+> use vue & vuex & vue-router to build Single Page Web Application.
 
 
 # Usage
